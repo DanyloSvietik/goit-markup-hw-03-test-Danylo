@@ -41,7 +41,7 @@ body {
     background-color: var(--header-background-color);
 }
 
-.header-container {
+.container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
@@ -75,6 +75,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -120,15 +122,20 @@ body {
     background-color: var(--hero-footer-color);
 }
 
+.section {
+    
+}
+
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--header-background-color);
+    text-align: center;
 }
 
 /*------------Button-------------------*/
@@ -158,7 +165,19 @@ body {
     color: var(--hover-btn-color);
 }
 
+.body-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.666;
+    color: var(--first-title-color);
+}
+
 .hero-uptitle {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1428;
@@ -168,22 +187,20 @@ body {
 }
 
 .hero-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--second-title-color);
 }
 
-.body-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.666;
-    color: var(--first-title-color);
-}
-
 /*--------------Команда------------*/
 
 .image-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1875;
@@ -191,6 +208,8 @@ body {
 }
 
 .image-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.1875;
     color: var(--second-title-color);
