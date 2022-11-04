@@ -279,11 +279,25 @@ body {
     
 }
 
+.activities-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
 /*--------------Команда------------*/
 
 .body-employees {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.employees-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .image-title {
@@ -390,7 +404,11 @@ body {
 
 /*--------------Portfolio Main------------*/
 
-.portfolio-image {}
+.portfolio-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 .portfolio-image-link {
     text-decoration: none;
