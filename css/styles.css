@@ -55,6 +55,15 @@ body {
     letter-spacing: 0.03em;
 }
 
+/*--------------Утилиты-----------------*/
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
 /*--------------page header--------------*/
 
 .page-header {
@@ -68,7 +77,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid red;
+}
 
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 /*---------------site nav-----------------*/
@@ -97,17 +110,29 @@ body {
     text-decoration: none;
 }
 
-.list {
-    padding: 0;
-    margin: 0;
+.header-nav {
+    display: flex;
     list-style: none;
+    margin-left: 93px;
 }
 
-.header-nav {
-    list-style: none;
+.header-nav .item {
+    outline: 1px solid red;
 }
+
+.header-nav .item + .item {
+    margin-left: 50px;
+}
+
+/* .header-nav .item:not(:last-child) {
+    margin-right: 50px;
+} */
 
 .header-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428;
@@ -123,6 +148,14 @@ body {
 
 .header-nav .header-nav-link.current {
     color: var(--blue-text-backgrounds);
+}
+
+.nav-contacts {
+    display: flex;
+}
+
+.nav-contacts .item + .item {
+    margin-left: 50px;
 }
 
 .header-contact {
@@ -154,6 +187,7 @@ body {
     padding-top: 200px;
     margin-top: 0;
     margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
@@ -376,4 +410,6 @@ body {
     line-height: 1.87;
     color: var(--second-title-color);
 }
-   
+ 
+
+/* training*/
