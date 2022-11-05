@@ -40,6 +40,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -152,6 +154,7 @@ body {
 
 .nav-contacts {
     display: flex;
+    margin-left: auto;
 }
 
 .nav-contacts .item + .item {
@@ -226,6 +229,10 @@ body {
     color: var(--hover-btn-color);
 }
 
+/*---------Преимущества-benefits----------*/
+
+
+
 .body-benefits {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -254,6 +261,11 @@ body {
     overflow: hidden;
 }
 
+.benefits-item {
+    display: flex;
+    gap: 30px;
+}
+
 .hero-uptitle {
     margin-top: 0;
     margin-bottom: 10px;
@@ -275,6 +287,8 @@ body {
     color: var(--second-title-color);
 }
 
+/*------------Примеры работ---------------*/
+
 .body-activities {
     
 }
@@ -284,8 +298,6 @@ body {
     flex-wrap: wrap;
     gap: 30px;
 }
-
-
 
 /*--------------Команда------------*/
 
@@ -384,6 +396,8 @@ body {
 /*-----------Portfolio Button------------*/
 
 .portfolio-button {
+    margin: 0 auto;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -394,6 +408,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
+    display: block;
+
 }
 
 .portfolio-button:hover,
