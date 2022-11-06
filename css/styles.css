@@ -28,6 +28,10 @@
     --hover-btn-color: #188CE8;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -78,7 +82,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 .main-nav {
@@ -118,9 +122,9 @@ body {
     margin-left: 93px;
 }
 
-.header-nav .item {
+/*.header-nav .item {
     outline: 1px solid red;
-}
+}*/
 
 .header-nav .item + .item {
     margin-left: 50px;
@@ -152,6 +156,9 @@ body {
     color: var(--blue-text-backgrounds);
 }
 
+/*.nav-contacts .item {
+    outline: 1px solid red;
+}*/
 .nav-contacts {
     display: flex;
     margin-left: auto;
@@ -178,6 +185,8 @@ body {
 /* --------------Hero------------ */
 
 .main {
+    padding-top: 200px;
+    padding-bottom: 280px;
     background-color: var(--hero-footer-color);
 }
 
@@ -186,11 +195,9 @@ body {
 }
 
 .hero-title {
-    padding-top: 200px;
     margin-top: 0;
     margin-bottom: 30px;
-    display: inline-block;
-
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3636;
@@ -221,6 +228,7 @@ body {
     text-align: center;
     display: block;
     margin: 0 auto;
+
 }
 
 .hero-button:hover,
@@ -231,15 +239,23 @@ body {
 /*---------Преимущества-benefits----------*/
 
 
-
 .body-benefits {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.container-benefits {
+    display: flex;
+    gap: 30px;
+}
+
+.container-benefits .item {
+    flex-basis: calc(100%-90/4);
+}
+
 .body-title {
-    margin-top: 0;
     margin-bottom: 50px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 36px;
@@ -258,11 +274,6 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.benefits-item {
-    display: flex;
-    gap: 30px;
 }
 
 .hero-uptitle {
@@ -289,7 +300,8 @@ body {
 /*------------Примеры работ---------------*/
 
 .body-activities {
-    
+    /*padding-top: 94px;*/
+    padding-bottom: 94px;
 }
 
 .activities-img {
@@ -300,19 +312,27 @@ body {
 
 /*--------------Команда------------*/
 
-.body-employees {
+.body-team {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.employees-img {
+.team-img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
+.team-img .item {
+    flex-basis: calc(100%-90/4);
+}
+
+.team-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .image-title {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
