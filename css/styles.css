@@ -92,6 +92,8 @@ body {
 
 /*---------------site nav-----------------*/
 
+/*---------------Logo-----------------*/
+
 .logo-nav {
     color: var(--blue-text-backgrounds);
     font-family: 'Raleway';
@@ -185,8 +187,8 @@ body {
 /* --------------Hero------------ */
 
 .main {
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding: 200px 0;
+    /*padding-bottom: 280px;*/
     background-color: var(--hero-footer-color);
 }
 
@@ -250,7 +252,7 @@ body {
 }
 
 .container-benefits .item {
-    flex-basis: calc(100%-90/4);
+    flex-basis: calc((100%-90)/4);
 }
 
 .body-title {
@@ -310,11 +312,16 @@ body {
     gap: 30px;
 }
 
+.activities-img .item {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 /*--------------Команда------------*/
 
 .body-team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--second-btn-color);
 }
 
 .team-img {
@@ -324,12 +331,16 @@ body {
 }
 
 .team-img .item {
-    flex-basis: calc(100%-90/4);
+    flex-basis: calc((100% - 90) / 4);
 }
 
 .team-title {
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--header-background-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .image-title {
@@ -351,7 +362,34 @@ body {
 /*----------------Footer-------------*/
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--hero-footer-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: var(--header-background-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.web {
+    color: var(--blue-text-backgrounds);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 .address {
@@ -381,29 +419,14 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.logo {
-    color: var(--header-background-color);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
-
-.web {
-    color: var(--blue-text-backgrounds);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-}
-
 .footer-links {
     text-decoration: none;
 }
+
+.address .item + .item {
+    margin-top: 9px;
+}
+
 
 /*-----------Portfolio Hero------------*/
 
@@ -419,7 +442,10 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
-    flex-basis: calc((100%-32px)/5);
+    flex-basis: calc((100% - 32px) / 5);
+    padding-top: 94px;
+    padding-bottom: 34px;
+    justify-content: center;
 }
 
 .portfolio-button {
@@ -434,7 +460,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
-    
 }
 
 .portfolio-button:hover,
@@ -445,14 +470,26 @@ body {
 
 /*--------------Portfolio Main------------*/
 
+.portfolio-hero {
+    background-color: var(--header-background-color);
+}
+
 .portfolio-image {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom: 94px;
 }
 
 .portfolio-image-link {
     text-decoration: none;
+}
+
+.portfolio-container {
+    padding: 20px 24px;
+    background-color: var(--header-background-color);
+    border: 1px solid #eeeeee;
+    border-top: 0;
 }
 
 .portfolio-image-title {
@@ -470,5 +507,3 @@ body {
     color: var(--second-title-color);
 }
  
-
-/* training*/
